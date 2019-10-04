@@ -5,6 +5,7 @@ def encrypt_caesar(plaintext: str, number: int) -> str:
  i=0
  while i < len(plaintext):
     b = ord(plaintext[i])
+    k = keyword[i]
     if((b+number > 65 and b+number < 90) or (b+number>97 and b+number < 122)) :
      b=b+number
     elif (b+number>90 and b+number < 97) :
