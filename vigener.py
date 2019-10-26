@@ -20,8 +20,7 @@ def encrypt_vigenere(plaintext: str, keyword: str) -> str:
     elif (b+number > 122) :
      b = b + number - 57
     c=c+(chr(b))
-    i=i+1
- print (c)      
+    i=i+1     
  return c
 def decrypt_vigenere(plaintext: str, keyword: str) -> str:
  b=int
@@ -46,9 +45,4 @@ def decrypt_vigenere(plaintext: str, keyword: str) -> str:
      b = b - number + 58
     c=c+(chr(b))
     i=i+1 
- print (c)
  return c
-l=input("Введите строку")
-s=(input("Введите шифр"))
-ciphertext= encrypt_vigenere (l,s)
-plaintext=decrypt_vigenere(l,s)
